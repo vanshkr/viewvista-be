@@ -45,8 +45,6 @@ temp/
 *.swp
 *.swo
 
-# Production builds folder
-/public
 
 # Optional eslint cache
 .eslintcache
