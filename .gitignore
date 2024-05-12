@@ -1,0 +1,65 @@
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+release/
+*.tsbuildinfo
+*.d.ts
+*.js
+*.js.map
+*.jsx
+*.jsx.map
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Typescript v1 declaration files
+typings/
+
+# Environment configuration files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary files created by editors or operating systems
+tmp/
+temp/
+*.tmp
+*.tlog
+*.tsw
+*.swp
+*.swo
+
+# Production builds folder
+/public
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# IDE / Editor directories
+.vscode/
+
+
+
+
