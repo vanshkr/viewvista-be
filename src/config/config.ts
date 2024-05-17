@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { DBConfig } from "../types/dbConfig.js";
+import { DBConfig } from "../types/dbConfig.ts";
 dotenv.config();
 
 export const config = {

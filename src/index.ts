@@ -3,8 +3,8 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cors from "cors";
 import dotenv from "dotenv";
-import { logger } from "./config/logger.js";
-import "./dbUtils/db.js"; // Import to initialize the database connection
+import { logger } from "./config/logger.ts";
+import "./dbUtils/db.ts"; // Import to initialize the database connection
 
 dotenv.config();
 
