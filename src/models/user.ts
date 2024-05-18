@@ -1,5 +1,5 @@
 import { DataTypes, Model } from "sequelize";
-import sequelize from "../dbUtils/db";
+import sequelize from "../dbUtils/db.js";
 
 interface UserAttributes {
   id: number;
@@ -42,7 +42,8 @@ User.init(
   },
   {
     sequelize,
-    modelName: "User",
+    modelName: "user",
+    freezeTableName: true,
   }
 );
 

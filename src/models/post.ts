@@ -1,6 +1,6 @@
 import { DataTypes, Model } from "sequelize";
-import sequelize from "../dbUtils/db";
-import User from "./user";
+import sequelize from "../dbUtils/db.js";
+import User from "./user.js";
 
 interface PostAttributes {
   id: number;
@@ -45,7 +45,8 @@ Post.init(
   },
   {
     sequelize,
-    modelName: "Post",
+    modelName: "post",
+    freezeTableName: true,
   }
 );
 

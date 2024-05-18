@@ -5,6 +5,12 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { logger } from "./config/logger.js";
 import "./dbUtils/db.js"; // Import to initialize the database connection
+import User from "./models/user.js";
+import Post from "./models/post.js";
+import Like from "./models/like.js";
+import Follower from "./models/follower.js";
+import SavedPost from "./models/savedPost.js";
+import Comment from "./models/comment.js";
 
 dotenv.config();
 
@@ -30,6 +36,12 @@ app.get('/test', (req, res) => {
 // app.use(errorHandler);
 
 // Start the server
+User.sync({force:true}).then((result)=>console.log(result));
+Post.sync({force:true}).then((result)=>console.log(result));
+SavedPost.sync({force:true}).then((result)=>console.log(result));
+Comment.sync({force:true}).then((result)=>console.log(result));
+Like.sync({force:true}).then((result)=>console.log(result));
+Follower.sync({force:true}).then((result)=>console.log(result));
 app.listen(PORT, () => {
   logger.info(`Server is running on port ${PORT}`);
 });

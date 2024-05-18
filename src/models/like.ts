@@ -1,7 +1,7 @@
 import { DataTypes, Model } from "sequelize";
-import sequelize from "../dbUtils/db";
-import User from "./user";
-import Post from "./post";
+import sequelize from "../dbUtils/db.js";
+import User from "./user.js";
+import Post from "./post.js";
 
 interface LikeAttributes {
   userId: number;
@@ -39,7 +39,8 @@ Like.init(
   },
   {
     sequelize,
-    modelName: "Like",
+    modelName: "like",
+    freezeTableName: true,
   }
 );
 
